@@ -1,0 +1,32 @@
+.bar-bottom {
+    border-top: 1px solid rgba($white-clr, .35);
+
+
+    @include screen-lg {
+        //  background-color: $main-clr;
+         border-top: none;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       .header-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo-img {
+                display: block;
+                max-width: 10rem;

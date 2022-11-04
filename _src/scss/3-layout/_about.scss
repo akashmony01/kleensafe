@@ -30,6 +30,10 @@
 				@include screen-md {
 					max-height: 500px;
 				}
+
+				.overlay-color.customized {
+					opacity: .25;
+				}
 			}
 		}
 
@@ -233,6 +237,10 @@
 		.overlay-color {
 			opacity: .5;
 			z-index: 1;
+
+			&.customized {
+				opacity: .1;
+			}
 		}
 
 		@include screen-md {

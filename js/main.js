@@ -187,7 +187,7 @@ $(function () {
 
 
     //  Start Smooth Scrolling To page Sections
-    $('.landing-page-demo .menu-navbar .menu-link').on('click', function (e) {
+    $('.landing-page-demo .menu-navbar .menu-link, .landing-page-demo .menu-navbar .header-cta-btn.customized').on('click', function (e) {
 
         // remove active class from all .menu-link items 
 

@@ -165,6 +165,17 @@
        background-color: $white-clr;
      }
 
+     &.customized {
+        color: $white-clr;
+        background-color: $secondary-clr;
+        border: 2px solid $secondary-clr;
+
+        &:hover {
+          color: $secondary-clr;
+          background-color: transparent;
+        }
+     }
+
      @include screen-lg {
        display: none;
      }
@@ -1028,8 +1039,8 @@
  .page-header{
   &.customized {
     .bar-bottom {
-      border-top: 1px solid rgba($white-clr, .35);
-      background-color: $main-clr;
+      // border-top: 1px solid rgba($white-clr, .35);
+      // background-color: $main-clr;
       @include ma-transition();
 
       @include screen-lg {
@@ -1038,7 +1049,14 @@
 
       .header-logo {
         .logo-img {
-          max-width: 12rem;
+          max-width: 20rem;
+          width: 20rem;
+          max-height: 150px!important;
+
+          @media (max-width: 640px) {
+            max-width: 15rem;
+            width: 15rem;
+          }
         }
       }
     }

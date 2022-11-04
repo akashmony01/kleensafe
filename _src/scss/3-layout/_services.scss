@@ -456,5 +456,9 @@
         }
         color: $white-clr;
         background-color: $main-clr;
+
+        .font-icon {
+            color: $secondary-clr;
+        }
     }
 }

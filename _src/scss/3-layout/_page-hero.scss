@@ -87,10 +87,20 @@
             margin-#{$end-direction}: 2rem;
         }
 
-        .sc-list .sc-item {
+        .sc-list {
 
-            .sc-icon {
-                color: $white-clr;
+            .sc-item{
+                .sc-icon {
+                    color: $white-clr;
+                }
+            }
+
+            &.customized{
+                .sc-item{
+                    .sc-icon {
+                        color: $secondary-clr;
+                    }
+                }
             }
 
         }
@@ -216,7 +226,6 @@
             // }
         }
     }
-
 }
 
 // Start vegas Slider version only rules 

@@ -92,6 +92,10 @@ section {
     color: $main-clr;
     font-weight: bolder;
     position: relative;
+
+    &.customized {
+        color: $secondary-clr;
+    }
 }
 
 .init-text {
@@ -487,6 +491,15 @@ a {
         min-width: 100%;
         min-height: 100%;
         z-index: -2;
+    }
+
+    &.customized {
+        .video {
+            bottom: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+        }
     }
 }
 

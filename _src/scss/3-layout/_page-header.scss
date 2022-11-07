@@ -1038,6 +1038,9 @@
 
  .page-header{
   &.customized {
+    .bar-top {
+      background-color: transparent;
+    }
     .bar-bottom {
       // border-top: 1px solid rgba($white-clr, .35);
       // background-color: $main-clr;
@@ -1047,23 +1050,41 @@
         border-top: none;
       }
 
+      .navbar {
+        height: 100px;
+
+        @media (max-width: 1024px) {
+          height: 80px;
+        }
+      }
+
       .header-logo {
         .logo-img {
-          max-width: 20rem;
-          width: 20rem;
-          max-height: 150px!important;
+          max-width: 26rem;
+          max-height: 100px!important;
 
+          @media (max-width: 1400px) {
+            max-width: 26rem;
+          }
+          @media (max-width: 1200px) {
+            max-width: 23rem;
+          }
+          @media (max-width: 1024px) {
+            max-width: 20rem;
+          }          
+          @media (max-width: 767px) {
+            max-width: 18rem;
+          }
           @media (max-width: 640px) {
             max-width: 15rem;
-            width: 15rem;
           }
         }
       }
     }
 
     &.is-sticky{
-      .bar-bottom {
-        border-top: 1px solid rgba($main-clr, 1);
+      .bar-top {
+        background-color: $main-clr;
       }
     }
   }

@@ -2682,6 +2682,9 @@ body.rounded-btns .field-group .label {
   display: none;
 }
 
+.page-header.customized .bar-top {
+  background-color: transparent;
+}
 .page-header.customized .bar-bottom {
   transition: all 0.5s ease-in-out 0s;
 }
@@ -2690,19 +2693,45 @@ body.rounded-btns .field-group .label {
     border-top: none;
   }
 }
+.page-header.customized .bar-bottom .navbar {
+  height: 100px;
+}
+@media (max-width: 1024px) {
+  .page-header.customized .bar-bottom .navbar {
+    height: 80px;
+  }
+}
 .page-header.customized .bar-bottom .header-logo .logo-img {
-  max-width: 20rem;
-  width: 20rem;
-  max-height: 150px !important;
+  max-width: 26rem;
+  max-height: 100px !important;
+}
+@media (max-width: 1400px) {
+  .page-header.customized .bar-bottom .header-logo .logo-img {
+    max-width: 26rem;
+  }
+}
+@media (max-width: 1200px) {
+  .page-header.customized .bar-bottom .header-logo .logo-img {
+    max-width: 23rem;
+  }
+}
+@media (max-width: 1024px) {
+  .page-header.customized .bar-bottom .header-logo .logo-img {
+    max-width: 20rem;
+  }
+}
+@media (max-width: 767px) {
+  .page-header.customized .bar-bottom .header-logo .logo-img {
+    max-width: 18rem;
+  }
 }
 @media (max-width: 640px) {
   .page-header.customized .bar-bottom .header-logo .logo-img {
     max-width: 15rem;
-    width: 15rem;
   }
 }
-.page-header.customized.is-sticky .bar-bottom {
-  border-top: 1px solid #3897f5;
+.page-header.customized.is-sticky .bar-top {
+  background-color: #3897F5;
 }
 
 /* End .page-header Rules    */
@@ -5167,7 +5196,7 @@ body.rounded-btns .field-group .label {
   z-index: 0;
 }
 .page-footer.customized .footer-logo {
-  max-width: 12rem;
+  max-width: 20rem;
 }
 .page-footer.customized .contact-info-card .icon {
   color: #fff;
@@ -5745,6 +5774,12 @@ body.rounded-btns .field-group .label {
   margin-top: 11rem;
   padding-bottom: 6rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.blog.blog-post.customized .breadcrumb-item {
+  color: #fff;
+}
+.blog.blog-post.customized .breadcrumb-link {
+  color: #fff;
 }
 .blog .post-featured-area {
   width: 100%;

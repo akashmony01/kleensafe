@@ -450,6 +450,15 @@
             margin-top: 11rem;
             padding-bottom: 6rem;
             border-bottom: 1px solid rgba($white-clr, .1);
+
+            .breadcrumb {
+                &-item {
+                    color: $white-clr;
+                }
+                &-link{
+                    color: $white-clr;
+                }
+            }
         }
     }
 
